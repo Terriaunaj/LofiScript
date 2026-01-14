@@ -36,7 +36,7 @@ The goal of this project was to create a peaceful, visually comforting space whi
 
 ## 🚀 Live Demo
 
-[View LofiScript](https://Terriaunaj.github.io/lofiscript)
+[View LofiScript](https://terriaunaj.github.io/LofiScript/)
 
 ---
 
