@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Sound Effect by <a href="https://pixabay.com/users/liecio-3298866/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=257596">LIECIO</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=257596">Pixabay</a> -->
+
+<head>
+
+  <!-- Necessary for Characters being used-->
+  <meta charset="UTF-8" />
+  <!-- Makes it viewable on multiple devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Website Title -->
+  <title>LofiScript</title>
+
+  <!-- Google font links -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">  
+
+  <!-- Links CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Welcome Section -->
+
+  <section id="welcome">
+
+    <div class = "welcome-content">
+
+      <h2>Welcome to</h2>
+
+      <!-- LofiScript logo image -->
+      <img src="assets/images/lofiscriptlogo.png" alt="LofiScript Logo" id = "logo"/>
+
+      <!-- Play button -->
+      <button id="start-btn">Play</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- Verse Section -->
+
+  <section id="verse-display" class="hidden">
+
+    <div id="logo-and-mute">
+      <!-- Lofscript logo -->
+      <img src="assets/images/lofiscriptlogo.png" alt="lofiscriptlogo" id="tinylogo">
+      <!-- mute button -->
+      <button id="rain-toggle"> 🔊💧</button>
+
+    </div>
+      
+      <!-- Youtube Lofi Playlist Video -->
+       <div class="lofi-player">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/videoseries?si=2qc73W2axacTprfr&amp;list=PL5q5OXykR5euR0VcpLcnWi9AaLPs5rQ2b" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+       </div>
+
+      <!-- Verse and Arrows on post-it -->
+      <div class="verse-and-arrows">
+          <!-- Actual Bible Verse -->
+            <p id="bible-verse">"Verse will appear here"</p>
+
+            <!-- Arrows -->
+            <div class="arrows">
+              <button id="prev-verse">←</button>
+              <button id="next-verse">→</button>
+            </div>
+      </div>
+
+  </section>
+
+  <!-- Outro Section -->
+
+  <!-- <section id="goodbye"> -->
+  <section id="goodbye">
+
+    <!-- Thank you for stopping by image -->
+    <img src="assets/images/thanks.png" alt="Thank You for Stopping By" />
+
+  </section>
+
+  <!-- Rain audio -->
+  <audio id="rain-audio" loop>
+    <source src="assets/audio/calming-rain-257596.mp3.download/calming-rain-257596.mp3">
+  </audio>
+
+  <!-- Links the JavaScript file -->
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>

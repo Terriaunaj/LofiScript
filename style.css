@@ -1,0 +1,210 @@
+/* Removes browsers defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Entire page */
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url(assets/images/Animation\ Falling\ Sticker\ by\ Enchanted\ Media.gif) center/cover no-repeat;
+  z-index: 999;
+  pointer-events: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(238, 239, 224);
+    color: rgb(0, 0, 0);
+  }
+
+/* Welcome Section */
+
+/* Really get detail for this */
+/* Top border for welcome */
+#welcome::before {
+    content: ""; 
+    display: block;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(129, 154, 145);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+#welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 216, 190);
+    position: relative;
+    background-image: url("assets/images/Animation\ Falling\ Sticker\ by\ Enchanted\ Media.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.welcome-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Makes the whole block bigger */
+  transform: scale(2.0);
+  }
+
+  
+#logo {
+    width: 300px;
+  }
+  
+#welcome h2 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+  }
+  
+#start-btn {
+    /* Adds space (10 above/below and 20 left/right) */
+    padding: 10px 20px;
+    /* Change font */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    /* Removes default border */
+    border: none;
+    /* Rounds the button */
+    border-radius: 20px;
+    align-self: center;
+    /* Changes the cursor to the hand */
+    cursor: pointer;
+  }
+  
+#start-btn:hover {
+    background-color: rgb(167, 193, 168); /* green on hover */
+  }
+
+/* Verse Section */
+
+#verse-display {
+  position: relative;
+  width: min(100vw, 100vh * 1.6);
+  aspect-ratio: 16 / 10;
+  margin: auto;
+  background-image: url("assets/images/FullSketch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-size: clamp(12px, 1.2vw, 20px);
+}
+
+#tinylogo {
+  width: 200px;
+}
+
+#logo-and-mute{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.verse-and-arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 37%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  text-align: center;
+}
+
+#bible-verse {
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    line-height: 1.4;
+}
+  
+.arrows {
+    display: flex;
+    gap: 20px; /* gap does not work without display flex or grid */
+}
+  
+.arrows button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: rgb(167, 193, 168);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+.arrows button:hover {
+    background-color: rgb(129, 154, 145);
+  }
+
+.lofi-player {
+  position: absolute;
+  top: 60.3%;
+  left: 27.7%;
+  width: 29%;
+  aspect-ratio: 16/9;
+  transform: rotate(1deg);
+}
+
+.lofi-player iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* Goodbye section */
+
+#goodbye {
+    /* Full length and width of the page */
+    height: 100vh;
+    /* Same background color */
+    background-color: rgb(209, 216, 190);
+    /* Centers the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
+  
+#goodbye img {
+    width: 600px;
+    max-width: 100%;
+  }
+  
+/* Bottom border for goodbye */
+#goodbye::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(129, 154, 145);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+.hidden{
+    display: none;
+}
